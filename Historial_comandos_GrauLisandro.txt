@@ -1,0 +1,177 @@
+ls
+ls -la
+clear
+cd /c
+cd
+mkdir archivos_clase
+ls -l
+cat << quit >> lista_de_comandos
+mkdir (nombre_de_directorio) = Crea un directorio y le pone el nombre ingresado.
+
+mv (archivo) (dirección) = Mueve el archivo ingresado a la dirección ingresada.
+quit
+
+clear
+cat lista_de_comandos 
+mv lista_de_comandos archivos_clase/
+ls -l
+cd archivos_clase/
+ls
+cat << quit > lista_de_comandos 
+mkdir (nombre) = Crea un directorio y le pone el nombre ingresado.
+
+mv (archivo / carpeta) (dirección) = Mueve un archivo o carpeta a la dirección ingresada.
+
+cp (archivo / carpeta) (dirección) = Copia un archivo o carpeta a la dirección ingresada.
+quit
+
+cat lista_de_comandos 
+cat << quit >> lista_de_comandos 
+
+rm (archivo / carpeta) = Borra un archivo o carpeta.
+quit
+
+cat lista_de_comandos 
+cat /var/log/
+clear
+sudo cat /var/log/dsmeg
+sudo cat /var/log/dmesg
+clear
+echo holaa
+wc
+exit
+clear
+ssh-keygen
+ls -la
+cd .ssh/
+ls -la
+cat $HOME/.ssh/*.pub
+cd
+pwd
+mkdir repogit
+ls -la
+cd repogit/
+ls -la
+git clone https://github.com/lisandro070/TP_AySO.git
+ls -la
+cd TP_AySO/
+ls -la
+man grep
+grep VAGRANT /etc/shadow
+clear
+cd repogit/TP_AySO/
+grep vagrant /etc/shadow
+history
+clear
+grep -i Vagrant /etc/shadow
+echo Hola profe, si estas viendo esto en el historial, me esta dando "Permission denied". Asi que voy a usar sudo.
+history
+clear
+sudo grep -i Vagrant /etc/shadow
+man awk
+sudo grep -i Vagrant /etc/shadow | awk -F: '{print $2}'
+cat << quit > pass_usuario.txt
+$y$j9T$d9dXU/By464MLZyErSspp0$Q2x97pt/us4H/0Exfs5970Qzp1ffNKY0nrwQJw.CFQ5
+quit
+
+cat pass_usuario.txt 
+sudo grep -i Vagrant /etc/shadow | awk -F: '{print $2}' > pass_usuario.txt 
+cat pass_usuario.txt 
+clear
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+ls -la
+cat datos_usuario.txt 
+cat pass_usuario.txt 
+clear
+pwd
+ls -la
+git add .
+git config --global user.email "graulisandro059@gmail.com"
+git config --global user.name "lisandro070"
+git commit -m "ADD: Agregado 1er ejercicio sobre pass_usuario.txt."
+git status
+ls -la
+cd
+ls -la
+ls -la > repogit/TP_AySO/permisos.txt
+cd repogit/TP_AySO/
+ls -la
+cat permisos.txt 
+clear
+history
+echo "ls -la > repogit/TP_AySO/permisos.txt" >> permisos.txt
+tail permisos.txt 
+clear
+history
+git add permisos.txt 
+git commit -m "ADD: Añadiendo archivo permisos"
+git status
+clear
+man grep
+cat /etc/passwd | grep "root" | head -n 10 > lista_ordenada
+ls
+cat lista_ordenada 
+cat /etc/passwd | grep -v "root" | head -n 10 > lista_ordenada 
+cat lista_ordenada 
+git add lista_ordenada 
+git commit -m “ADD: Listado de usuarios ordenada”
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+cool
+clear
+ls -la
+cat README.md 
+clear
+cat << quit >> README.md 
+Alumno: Lisandro Grau Segura
+División: 111
+Turno: Noche
+quit
+
+cat README.md 
+git add README.md 
+git commit -m "ADD: Añadiendo información de alumno a README.md"
+cd
+pwd
+man mkdir
+mkdir -p universidad/alumnos/legajos{1..15} universidad/profesores/legajos{1..5}
+ls
+cd universidad/
+ls -la
+cd ..
+tree universidad/
+cd universidad/
+cd alumnos/
+ls -la
+cd ..
+cd profesores/
+ls -la
+cd
+ls
+cd repogit/TP_AySO/
+echo "mkdir -p universidad/alumnos/legajos{1..15} universidad/profesores/legajos{1..5}" > script_dir.sh
+cat script_dir.sh 
+clear
+git add script_dir.sh 
+git commit -m "ADD: Añadiendo script."
+git push
+git status
+git push
+clear
+git status
+cd repogit/TP_AySO/
+git status
+git push
+git remote -v
+clear
+ssh -T git@github.com
+git remote set-url origin git@github.com:lisandro070/TP_AySO.git
+cd repogit/TP_AySO/
+git remote set-url origin git@github.com:lisandro070/TP_AySO.git
+git remote -v
+git status
+git push
+clear
+history -a
