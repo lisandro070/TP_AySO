@@ -1,0 +1,16 @@
+total 56
+drwxr-x--- 7 vagrant vagrant 4096 Oct 19 20:18 .
+drwxr-xr-x 4 root    root    4096 Oct 18 23:59 ..
+-rw------- 1 vagrant vagrant 1982 Oct 19 20:26 .bash_history
+-rw-r--r-- 1 vagrant vagrant  220 Oct  4 11:11 .bash_logout
+-rw-r--r-- 1 vagrant vagrant 4251 Oct 18 23:59 .bashrc
+drwx------ 2 vagrant vagrant 4096 Oct 18 23:59 .cache
+-rw-rw-r-- 1 vagrant vagrant   62 Oct 19 20:18 .gitconfig
+-rw------- 1 vagrant vagrant   20 Oct 19 20:07 .lesshst
+-rw-r--r-- 1 vagrant vagrant  807 Oct  4 11:11 .profile
+drwx------ 2 vagrant vagrant 4096 Oct 19 19:37 .ssh
+-rw-r--r-- 1 root    root       5 Oct 18 23:59 README
+drwxrwxr-x 2 vagrant vagrant 4096 Oct 19 00:15 archivos_clase
+drwxrwxrwx 1 vagrant vagrant    0 Oct 18 23:56 carpeta_compartida
+drwxrwxr-x 4 vagrant vagrant 4096 Oct 19 19:50 repogit
+ls -la > repogit/TP_AySO/permisos.txt
